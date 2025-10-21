@@ -15,6 +15,17 @@ is_equal_to = tk.Label(text="Is equal to")
 result_value = tk.Label(text=0)
 
 #Button
-calculate = tk.Button(text="Calculate", command=calculate_miles_to_km)
+calculate_button = tk.Button(text="Calculate", command=calculate_miles_to_km)
+
+#Input
+num_input = tk.Entry(width=10)
+
+#Grid
+is_equal_to.grid(row=1, column=0)
+num_input.grid(row=0, column=1)
+result_value.grid(row=1, column=1)
+calculate_button.grid(row=2, column=1)
+miles.grid(row=0, column=2)
+km.grid(row=1, column=2)
 
 window.mainloop()
