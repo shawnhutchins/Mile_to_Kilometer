@@ -1,7 +1,7 @@
 import tkinter as tk
 
 def calculate_miles_to_km(event=None):
-    result_value["text"] = round(float(num_input.get()) * 1.6)
+    result_value["text"] = round(float(num_input.get()) * 1.609)
 
 window = tk.Tk()
 window.title("Mile to Kilometer Converter")
