@@ -1,11 +1,14 @@
 import tkinter as tk
 
-def calculate_miles_to_km():
+def calculate_miles_to_km(event=None):
     result_value["text"] = round(float(num_input.get()) * 1.6)
 
 window = tk.Tk()
 window.title("Mile to Kilometer Converter")
 window.config(padx=20, pady=20)
+
+#Binding Return key to calculate func
+window.bind('<Return>', calculate_miles_to_km)
 
 #Labels
 miles = tk.Label(text="Miles")
